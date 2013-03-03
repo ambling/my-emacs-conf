@@ -1,3 +1,7 @@
+;;MIT Licensed
+;;By ambling<ambling07@gmail.com>
+
+
 (global-unset-key "\M- ")
 (global-set-key "\M- " 'set-mark-command)
 
