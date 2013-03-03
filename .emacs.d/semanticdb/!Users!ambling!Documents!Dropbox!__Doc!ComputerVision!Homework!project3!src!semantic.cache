@@ -1,0 +1,47 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "FeatureDetect.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("string" include (:system-flag t) nil [39 56])
+            ("opencv2/core/core.hpp" include (:system-flag t) nil [57 89])
+            ("opencv2/nonfree/features2d.hpp" include (:system-flag t) nil [90 131])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [132 170])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [172 192])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [193 212])
+            ("feaDet" function
+               (:arguments 
+                  ( ("img1" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [226 235])
+                    ("img2" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [236 245]))                  
+                :type "void")
+                nil [214 1508])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1519 1528])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1529 1541]))                  
+                :type "int")
+                nil [1510 1925]))          
+    :file "FeatureDetect.cpp"
+    :pointmax 1926
+    :fsize 1925
+    :lastmodtime '(20713 36660)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!ambling!Documents!Dropbox!__Doc!ComputerVision!Homework!project3!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

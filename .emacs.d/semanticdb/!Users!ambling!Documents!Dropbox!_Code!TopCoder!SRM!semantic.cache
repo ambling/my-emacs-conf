@@ -1,0 +1,111 @@
+;; Object SRM/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SRM/"
+  :tables (list 
+    (semanticdb-table "PenguinPals.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("conio.h" include (:system-flag t) nil [20 38])
+            ("sstream" include (:system-flag t) nil [39 57])
+            ("debuging" variable (:constant-flag t) nil [72 80])
+            ("FIN" variable (:constant-flag t) nil [105 108])
+            ("FOUT" variable (:constant-flag t) nil [154 158])
+            ("OUT" variable (:constant-flag t) nil [205 208])
+            ("ERR" variable (:constant-flag t) nil [257 260])
+            ("iostream" include (:system-flag t) nil [431 450])
+            ("cstring" include (:system-flag t) nil [451 469])
+            ("algorithm" include (:system-flag t) nil [470 490])
+            ("cmath" include (:system-flag t) nil [491 507])
+            ("vector" include (:system-flag t) nil [508 525])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [526 547])
+            ("For" variable (:constant-flag t) nil [556 559])
+            ("SZ" variable (:constant-flag t) nil [606 608])
+            ("lint" type
+               (:typedef ("long long")
+                :superclasses "long long"
+                :type "typedef")
+                nil [631 655])
+            ("eps" variable
+               (:constant-flag t
+                :type "double")
+                nil [684 709])
+            ("PenguinPals" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [731 738])
+                    ("findMaximumMatching" function
+                       (:arguments 
+                          ( ("colors" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [763 777]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [739 798])
+                    ("public" label nil (reparse-symbol classsubparts) [820 827])
+                    ("run_test" function
+                       (:arguments 
+                          ( ("Case" variable (:type "int") (reparse-symbol arg-sub-list) [843 852]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [829 1240])
+                    ("private" label nil (reparse-symbol classsubparts) [1242 1250])
+                    ("print_array" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1293 1312]))                          )
+                        (reparse-symbol classsubparts) [1252 1488])
+                    ("verify_case" function
+                       (:arguments 
+                          ( ("Case" variable (:type "int") (reparse-symbol arg-sub-list) [1507 1516])
+                            ("Expected" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1517 1537])
+                            ("Received" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1538 1558]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1490 1797])
+                    ("test_case_0" function (:type "void") (reparse-symbol classsubparts) [1799 1910])
+                    ("test_case_1" function (:type "void") (reparse-symbol classsubparts) [1912 2019])
+                    ("test_case_2" function (:type "void") (reparse-symbol classsubparts) [2021 2129])
+                    ("test_case_3" function (:type "void") (reparse-symbol classsubparts) [2131 2243])
+                    ("test_case_4" function (:type "void") (reparse-symbol classsubparts) [2245 2360])
+                    ("test_case_5" function (:type "void") (reparse-symbol classsubparts) [2362 2466])
+                    ("test_case_6" function (:type "void") (reparse-symbol classsubparts) [2468 2579])
+                    ("test_case_7" function (:type "void") (reparse-symbol classsubparts) [2581 2693]))                  
+                :type "class")
+                nil [711 2714])
+            ("main" function (:type "int") nil [2732 2808]))          
+    :file "PenguinPals.cpp"
+    :pointmax 2825
+    :fsize 2824
+    :lastmodtime '(20733 12013)
+    :unmatched-syntax '((punctuation 682 . 683) (number 680 . 681) (punctuation 679 . 680) (punctuation 678 . 679) (symbol 676 . 678) (punctuation 675 . 676) (punctuation 673 . 674) (symbol 666 . 672) (INT 662 . 665) (CONST 656 . 661))
+    :lexical-table 
+        '(("ERR" (spp-arg-list ("x") 260 . 263) . ((semantic-list "{cout<<\"#error: \"<< x ; while(1) ;}" 265 . 300)))
+          ("SZ" (spp-arg-list ("x") 608 . 611) . ((semantic-list "(int)" 613 . 618) (semantic-list "((x).size())" 618 . 630)))
+          ("FOUT" . ((semantic-list "{freopen(\"new.out\" , \"w\" , stdout) ;}" 159 . 196)))
+          ("FIN" . ((semantic-list "{freopen(\"new.in\" , \"r\" , stdin) ;}" 110 . 145)))
+          ("debuging")
+          ("OUT" (spp-arg-list ("x") 208 . 211) . ((semantic-list "{cout<< #x << \"  : \" << x <<endl ;}" 213 . 248)))
+          ("For" (spp-arg-list ("i" "n") 559 . 566) . ((FOR "for" 567 . 570) (semantic-list "(int i = 0 ; i < (n) ; ++i)" 570 . 597)))
+          )
+
+    )
+   )
+  :file "!Users!ambling!Documents!Dropbox!_Code!TopCoder!SRM!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,25 @@
+;; Object features2d/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "features2d/"
+  :tables (list 
+   (semanticdb-table "features2d.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__OPENCV_FEATURES_2D_HPP__" variable (:constant-flag t) nil [2201 2227])
+            ("opencv2/core/core.hpp" include nil nil [2229 2261])
+            ("opencv2/flann/miniflann.hpp" include nil nil [2262 2300]))          
+    :file "features2d.hpp"
+    :pointmax 63642
+    :fsize 63641
+    :lastmodtime '(20609 55887)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__OPENCV_FEATURES_2D_HPP__")
+          )
+
+    )
+   )
+  :file "!usr!local!Cellar!opencv!2.4.3!include!opencv2!features2d!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

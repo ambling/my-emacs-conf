@@ -1,0 +1,383 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "keypoint.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("precomp.hpp" include nil nil [2086 2108])
+            ("cv" type
+               (:members 
+                  ( ("hash" function
+                       (:parent "KeyPoint"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2126 2567])
+                    ("write" function
+                       (:arguments 
+                          ( ("fs" variable
+                               (:reference 1
+                                :type ("FileStorage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2580 2596])
+                            ("objname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2597 2619])
+                            ("keypoints" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("KeyPoint" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2620 2654]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2569 3076])
+                    ("read" function
+                       (:arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FileNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3089 3110])
+                            ("keypoints" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("KeyPoint" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3111 3139]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3079 3431])
+                    ("convert" function
+                       (:parent "KeyPoint"
+                        :arguments 
+                          ( ("keypoints" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("KeyPoint" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3457 3496])
+                            ("points2f" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Point2f" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3497 3528])
+                            ("keypointIndexes" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3552 3587]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3434 4247])
+                    ("convert" function
+                       (:parent "KeyPoint"
+                        :arguments 
+                          ( ("points2f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Point2f" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4273 4310])
+                            ("keypoints" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("KeyPoint" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4311 4344])
+                            ("size" variable (:type "float") (reparse-symbol arg-sub-list) [4369 4380])
+                            ("response" variable (:type "float") (reparse-symbol arg-sub-list) [4381 4396])
+                            ("octave" variable (:type "int") (reparse-symbol arg-sub-list) [4397 4408])
+                            ("class_id" variable (:type "int") (reparse-symbol arg-sub-list) [4409 4423]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4249 4600])
+                    ("overlap" function
+                       (:parent "KeyPoint"
+                        :arguments 
+                          ( ("kp1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("KeyPoint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4627 4647])
+                            ("kp2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("KeyPoint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4648 4669]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [4602 5858])
+                    ("KeypointResponseGreaterThanThreshold" type
+                       (:members 
+                          ( ("KeypointResponseGreaterThanThreshold" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_value" variable (:type "float") (reparse-symbol arg-sub-list) [5948 5961]))                                  
+                                :type ("KeypointResponseGreaterThanThreshold" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [5911 5993])
+                            ("()" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("kpt" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("KeyPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6021 6041]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5998 6097])
+                            ("value" variable (:type "float") (reparse-symbol classsubparts) [6102 6114]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [5861 6117])
+                    ("KeypointResponseGreater" type
+                       (:members 
+                          ( ("()" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("kp1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("KeyPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6179 6199])
+                                    ("kp2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("KeyPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6200 6220]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6156 6282]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6119 6285])
+                    ("retainBest" function
+                       (:parent "KeyPointsFilter"
+                        :arguments 
+                          ( ("keypoints" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("KeyPoint" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6370 6398])
+                            ("n_points" variable (:type "int") (reparse-symbol arg-sub-list) [6399 6412]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6337 7493])
+                    ("RoiPredicate" type
+                       (:members 
+                          ( ("RoiPredicate" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_r" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Rect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7535 7551]))                                  
+                                :type ("RoiPredicate" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [7521 7566])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("keyPt" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("KeyPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7589 7612]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7572 7670])
+                            ("r" variable (:type ("Rect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7676 7683]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [7495 7686])
+                    ("runByImageBorder" function
+                       (:parent "KeyPointsFilter"
+                        :arguments 
+                          ( ("keypoints" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("KeyPoint" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7728 7756])
+                            ("imageSize" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7757 7772])
+                            ("borderSize" variable (:type "int") (reparse-symbol arg-sub-list) [7773 7789]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7688 8297])
+                    ("SizePredicate" type
+                       (:members 
+                          ( ("SizePredicate" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_minSize" variable (:type "float") (reparse-symbol arg-sub-list) [8341 8356])
+                                    ("_maxSize" variable (:type "float") (reparse-symbol arg-sub-list) [8357 8373]))                                  
+                                :type ("SizePredicate" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [8326 8419])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("keyPt" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("KeyPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8442 8465]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8425 8569])
+                            ("maxSize" variable (:type "float") (reparse-symbol classsubparts) [8575 8598])
+                            ("minSize" variable (:type "float") (reparse-symbol classsubparts) [8575 8598]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [8299 8601])
+                    ("runByKeypointSize" function
+                       (:parent "KeyPointsFilter"
+                        :arguments 
+                          ( ("keypoints" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("KeyPoint" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8644 8672])
+                            ("minSize" variable (:type "float") (reparse-symbol arg-sub-list) [8673 8687])
+                            ("maxSize" variable (:type "float") (reparse-symbol arg-sub-list) [8688 8703]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8603 8947])
+                    ("MaskPredicate" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8971 8978])
+                            ("MaskPredicate" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_mask" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8998 9016]))                                  
+                                :type ("MaskPredicate" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8983 9033])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("key_pt" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("KeyPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9055 9078]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9038 9188])
+                            ("private" label nil (reparse-symbol classsubparts) [9190 9198])
+                            ("mask" variable
+                               (:constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9203 9218])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MaskPredicate" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9248 9269]))                                  
+                                :type ("MaskPredicate" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9223 9270]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [8949 9273])
+                    ("runByPixelsMask" function
+                       (:parent "KeyPointsFilter"
+                        :arguments 
+                          ( ("keypoints" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("KeyPoint" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9314 9342])
+                            ("mask" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9343 9360]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9275 9510])
+                    ("KeyPoint_LessThan" type
+                       (:members 
+                          ( ("KeyPoint_LessThan" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_kp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("KeyPoint" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9561 9589]))                                  
+                                :type ("KeyPoint_LessThan" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [9543 9603])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [9624 9630])
+                                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [9631 9637]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9608 10327])
+                            ("kp" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("KeyPoint" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [10332 10359]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [9512 10362])
+                    ("removeDuplicated" function
+                       (:parent "KeyPointsFilter"
+                        :arguments 
+                          ( ("keypoints" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("KeyPoint" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10404 10433]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10364 11189]))                  
+                :type "namespace")
+                nil [2110 11192]))          
+    :file "keypoint.cpp"
+    :pointmax 11193
+    :fsize 11192
+    :lastmodtime '(20607 14186)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "precomp.hpp"
+    :file "precomp.hpp"
+    :fsize 2526
+    :lastmodtime '(20627 57575)
+    )
+   )
+  :file "!Users!ambling!Documents!_Code!OpenCV-2.4.3!modules!features2d!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

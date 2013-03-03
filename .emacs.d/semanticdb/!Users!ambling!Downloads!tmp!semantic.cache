@@ -1,0 +1,34 @@
+;; Object tmp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tmp/"
+  :tables (list 
+   (semanticdb-table "test.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iosteam" include (:system-flag t) nil [1 19])
+            ("string" include (:system-flag t) nil [20 37])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [38 58])
+            ("hi" type
+               (:members 
+                  ( ("a" variable (:type "int") (reparse-symbol classsubparts) [72 82])
+                    ("b" variable (:type "int") (reparse-symbol classsubparts) [87 97])
+                    ("sdjfjsldkjf" variable (:type "int") (reparse-symbol classsubparts) [99 115]))                  
+                :type "class")
+                nil [60 118])
+            ("dhfiahfhaife" variable (:type "int") nil [120 137])
+            ("a" variable (:type "int") nil [138 157])
+            ("main" function (:type "int") nil [158 563]))          
+    :file "test.cpp"
+    :pointmax 546
+    :fsize 545
+    :lastmodtime '(20787 25019)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!ambling!Downloads!tmp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

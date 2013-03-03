@@ -1,0 +1,76 @@
+;; Object photo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "photo/"
+  :tables (list 
+   (semanticdb-table "photo.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__OPENCV_PHOTO_HPP__" variable (:constant-flag t) nil [2200 2220])
+            ("opencv2/core/core.hpp" include nil nil [2222 2254])
+            ("opencv2/imgproc/imgproc.hpp" include nil nil [2255 2293])
+            ("opencv2/photo/photo_c.h" include nil nil [2295 2329]))          
+    :file "photo.hpp"
+    :pointmax 3998
+    :fsize 3997
+    :lastmodtime '(20571 40649)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__OPENCV_PHOTO_HPP__")
+          )
+
+    )
+   (semanticdb-table "photo_c.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__OPENCV_PHOTO_C_H__" variable (:constant-flag t) nil [2200 2220])
+            ("opencv2/core/core_c.h" include nil nil [2222 2254])
+            ("" type
+               (:members 
+                  ( ("CV_INPAINT_NS" variable
+                       (:constant-flag t
+                        :default-value (2355 2356)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2335 2356])
+                    ("CV_INPAINT_TELEA" variable
+                       (:constant-flag t
+                        :default-value (2382 2383)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2362 2383]))                  
+                :type "enum")
+                nil [2324 2386])
+            ("cvInpaint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2460 2477])
+                    ("inpaint_mask" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2478 2504])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2528 2539])
+                    ("inpaintRange" variable (:type "double") (reparse-symbol arg-sub-list) [2540 2560])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [2561 2572]))                  
+                :type "int")
+                nil [2449 2573]))          
+    :file "photo_c.h"
+    :pointmax 2648
+    :fsize 2647
+    :lastmodtime '(20607 14186)
+    :unmatched-syntax '((semantic-list 2442 . 2448) (symbol 2437 . 2442))
+    :lexical-table 
+        '(("__OPENCV_PHOTO_C_H__")
+          )
+
+    )
+   )
+  :file "!usr!local!Cellar!opencv!2.4.3!include!opencv2!photo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

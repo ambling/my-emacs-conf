@@ -1,0 +1,28 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "showMov.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("cv.h" include (:system-flag t) nil [39 54])
+            ("cxcore.h" include (:system-flag t) nil [55 74])
+            ("highgui.h" include (:system-flag t) nil [75 95])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [97 117])
+            ("main" function (:type "int") nil [119 1335]))          
+    :file "showMov.cpp"
+    :pointmax 1336
+    :fsize 1335
+    :lastmodtime '(20671 13423)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!ambling!Documents!Dropbox!__Doc!ComputerVision!Homework!project1!showMov!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

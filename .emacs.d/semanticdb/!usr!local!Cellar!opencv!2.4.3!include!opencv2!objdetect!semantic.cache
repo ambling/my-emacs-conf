@@ -1,0 +1,343 @@
+;; Object objdetect/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "objdetect/"
+  :tables (list 
+   (semanticdb-table "objdetect.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__OPENCV_OBJDETECT_HPP__" variable (:constant-flag t) nil [2199 2223])
+            ("opencv2/core/core.hpp" include nil nil [2225 2257])
+            ("CV_HAAR_MAGIC_VAL" variable (:constant-flag t) nil [2614 2631])
+            ("CV_TYPE_NAME_HAAR" variable (:constant-flag t) nil [2654 2671])
+            ("CV_IS_HAAR_CLASSIFIER" variable (:constant-flag t) nil [2709 2730])
+            ("CV_HAAR_FEATURE_MAX" variable (:constant-flag t) nil [2982 3001])
+            ("CvHaarFeature" type
+               (:typedef ("CvHaarFeature" type (:type "struct") nil nil)
+                :superclasses "CvHaarFeature"
+                :type "typedef")
+                nil [3006 3159])
+            ("CvHaarFeature" type
+               (:members 
+                  ( ("tilted" variable (:type "int") (reparse-symbol classsubparts) [3041 3052])
+                    ("rect" variable
+                       (:dereference 1
+                        :type ("" type
+                             (:members 
+                                ( ("r" variable (:type ("CvRect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3078 3087])
+                                  ("weight" variable (:type "float") (reparse-symbol classsubparts) [3096 3109]))                                
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3057 3142]))                  
+                :type "struct")
+                nil [3006 3159])
+            ("CvHaarClassifier" type
+               (:typedef ("CvHaarClassifier" type (:type "struct") nil nil)
+                :superclasses "CvHaarClassifier"
+                :type "typedef")
+                nil [3161 3333])
+            ("CvHaarClassifier" type
+               (:members 
+                  ( ("count" variable (:type "int") (reparse-symbol classsubparts) [3199 3209])
+                    ("haar_feature" variable
+                       (:pointer 1
+                        :type ("CvHaarFeature" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3214 3242])
+                    ("threshold" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [3247 3264])
+                    ("left" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [3269 3279])
+                    ("right" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [3284 3295])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [3300 3313]))                  
+                :type "struct")
+                nil [3161 3333])
+            ("CvHaarStageClassifier" type
+               (:typedef ("CvHaarStageClassifier" type (:type "struct") nil nil)
+                :superclasses "CvHaarStageClassifier"
+                :type "typedef")
+                nil [3335 3515])
+            ("CvHaarStageClassifier" type
+               (:members 
+                  ( ("count" variable (:type "int") (reparse-symbol classsubparts) [3378 3389])
+                    ("threshold" variable (:type "float") (reparse-symbol classsubparts) [3394 3410])
+                    ("classifier" variable
+                       (:pointer 1
+                        :type ("CvHaarClassifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3415 3444])
+                    ("next" variable (:type "int") (reparse-symbol classsubparts) [3450 3459])
+                    ("child" variable (:type "int") (reparse-symbol classsubparts) [3464 3474])
+                    ("parent" variable (:type "int") (reparse-symbol classsubparts) [3479 3490]))                  
+                :type "struct")
+                nil [3335 3515])
+            ("CvHidHaarClassifierCascade" type
+               (:typedef ("CvHidHaarClassifierCascade" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "CvHidHaarClassifierCascade"
+                :type "typedef")
+                nil [3517 3586])
+            ("CvHaarClassifierCascade" type
+               (:typedef ("CvHaarClassifierCascade" type (:type "struct") nil nil)
+                :superclasses "CvHaarClassifierCascade"
+                :type "typedef")
+                nil [3588 3853])
+            ("CvHaarClassifierCascade" type
+               (:members 
+                  ( ("flags" variable (:type "int") (reparse-symbol classsubparts) [3633 3644])
+                    ("count" variable (:type "int") (reparse-symbol classsubparts) [3649 3660])
+                    ("orig_window_size" variable (:type ("CvSize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3665 3689])
+                    ("real_window_size" variable (:type ("CvSize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3694 3718])
+                    ("scale" variable (:type "double") (reparse-symbol classsubparts) [3723 3736])
+                    ("stage_classifier" variable
+                       (:pointer 1
+                        :type ("CvHaarStageClassifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3741 3781])
+                    ("hid_cascade" variable
+                       (:pointer 1
+                        :type ("CvHidHaarClassifierCascade" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3786 3826]))                  
+                :type "struct")
+                nil [3588 3853])
+            ("CvAvgComp" type
+               (:typedef ("CvAvgComp" type (:type "struct") nil nil)
+                :superclasses "CvAvgComp"
+                :type "typedef")
+                nil [3855 3930])
+            ("CvAvgComp" type
+               (:members 
+                  ( ("rect" variable (:type ("CvRect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3886 3898])
+                    ("neighbors" variable (:type "int") (reparse-symbol classsubparts) [3903 3917]))                  
+                :type "struct")
+                nil [3855 3930])
+            ("cvLoadHaarClassifierCascade" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("directory" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4137 4159])
+                    ("orig_window_size" variable (:type ("CvSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4160 4184]))                  
+                :type "int")
+                nil [4088 4185])
+            ("cvReleaseHaarClassifierCascade" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cascade" variable
+                       (:pointer 2
+                        :type ("CvHaarClassifierCascade" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4231 4266]))                  
+                :type "int")
+                nil [4199 4267])
+            ("CV_HAAR_DO_CANNY_PRUNING" variable (:constant-flag t) nil [4277 4301])
+            ("CV_HAAR_SCALE_IMAGE" variable (:constant-flag t) nil [4315 4334])
+            ("CV_HAAR_FIND_BIGGEST_OBJECT" variable (:constant-flag t) nil [4353 4380])
+            ("CV_HAAR_DO_ROUGH_SEARCH" variable (:constant-flag t) nil [4391 4414])
+            ("cvHaarDetectObjects" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("image" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4974 4993])
+                    ("cascade" variable
+                       (:pointer 1
+                        :type ("CvHaarClassifierCascade" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5015 5048])
+                    ("storage" variable
+                       (:pointer 1
+                        :type ("CvMemStorage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5049 5071])
+                    ("scale_factor" variable (:type "double") (reparse-symbol arg-sub-list) [5093 5123])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5113 5128])
+                    ("min_neighbors" variable (:type "int") (reparse-symbol arg-sub-list) [5151 5179])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5169 5182])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [5184 5204])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5194 5207])
+                    ("min_size" variable (:type ("CvSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5230 5256])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5246 5269])
+                    ("max_size" variable (:type ("CvSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5271 5297])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5287 5310]))                  
+                :type "int")
+                nil [4953 5312])
+            ("cvSetImagesForHaarClassifierCascade" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cascade" variable
+                       (:pointer 1
+                        :type ("CvHaarClassifierCascade" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5409 5442])
+                    ("sum" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5491 5508])
+                    ("sqsum" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5509 5528])
+                    ("tilted_sum" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5577 5601])
+                    ("scale" variable (:type "double") (reparse-symbol arg-sub-list) [5602 5616]))                  
+                :type "int")
+                nil [5372 5617])
+            ("cvRunHaarClassifierCascade" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cascade" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvHaarClassifierCascade" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5705 5744])
+                    ("pt" variable (:type ("CvPoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5784 5795])
+                    ("start_stage" variable (:type "int") (reparse-symbol arg-sub-list) [5796 5822])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5812 5825]))                  
+                :type "int")
+                nil [5677 5827])
+            ("CvLSVMFilterPosition" type
+               (:typedef ("CvLSVMFilterPosition" type (:type "struct") nil nil)
+                :superclasses "CvLSVMFilterPosition"
+                :type "typedef")
+                nil [6276 6370])
+            ("CvLSVMFilterPosition" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [6318 6324])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [6329 6335])
+                    ("l" variable (:type "int") (reparse-symbol classsubparts) [6340 6346]))                  
+                :type "struct")
+                nil [6276 6370])
+            ("CvLSVMFilterObject" type
+               (:typedef ("CvLSVMFilterObject" type (:type "struct") nil nil)
+                :superclasses "CvLSVMFilterObject"
+                :type "typedef")
+                nil [7150 7326])
+            ("CvLSVMFilterObject" type
+               (:members 
+                  ( ("V" variable (:type ("CvLSVMFilterPosition" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7189 7212])
+                    ("fineFunction" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [7217 7239])
+                    ("sizeX" variable (:type "int") (reparse-symbol classsubparts) [7244 7254])
+                    ("sizeY" variable (:type "int") (reparse-symbol classsubparts) [7259 7269])
+                    ("numFeatures" variable (:type "int") (reparse-symbol classsubparts) [7274 7290])
+                    ("H" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [7295 7304]))                  
+                :type "struct")
+                nil [7150 7326])
+            ("CvLatentSvmDetector" type
+               (:typedef ("CvLatentSvmDetector" type (:type "struct") nil nil)
+                :superclasses "CvLatentSvmDetector"
+                :type "typedef")
+                nil [7803 8009])
+            ("CvLatentSvmDetector" type
+               (:members 
+                  ( ("num_filters" variable (:type "int") (reparse-symbol classsubparts) [7844 7860])
+                    ("num_components" variable (:type "int") (reparse-symbol classsubparts) [7865 7884])
+                    ("num_part_filters" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [7889 7911])
+                    ("filters" variable
+                       (:pointer 2
+                        :type ("CvLSVMFilterObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7916 7945])
+                    ("b" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [7950 7959])
+                    ("score_threshold" variable (:type "float") (reparse-symbol classsubparts) [7964 7986]))                  
+                :type "struct")
+                nil [7803 8009])
+            ("CvObjectDetection" type
+               (:typedef ("CvObjectDetection" type (:type "struct") nil nil)
+                :superclasses "CvObjectDetection"
+                :type "typedef")
+                nil [8210 8299])
+            ("CvObjectDetection" type
+               (:members 
+                  ( ("rect" variable (:type ("CvRect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8249 8261])
+                    ("score" variable (:type "float") (reparse-symbol classsubparts) [8266 8278]))                  
+                :type "struct")
+                nil [8210 8299])
+            ("cvLoadLatentSvmDetector" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8739 8760]))                  
+                :type "int")
+                nil [8715 8761])
+            ("cvReleaseLatentSvmDetector" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("detector" variable
+                       (:pointer 2
+                        :type ("CvLatentSvmDetector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9029 9060]))                  
+                :type "int")
+                nil [9002 9061])
+            ("cvLatentSvmDetectObjects" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("image" variable
+                       (:pointer 1
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9971 9987])
+                    ("detector" variable
+                       (:pointer 1
+                        :type ("CvLatentSvmDetector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10020 10050])
+                    ("storage" variable
+                       (:pointer 1
+                        :type ("CvMemStorage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10083 10105])
+                    ("overlap_threshold" variable (:type "float") (reparse-symbol arg-sub-list) [10138 10172])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10162 10178])
+                    ("numThreads" variable (:type "int") (reparse-symbol arg-sub-list) [10212 10237])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10227 10241]))                  
+                :type "int")
+                nil [9946 10243]))          
+    :file "objdetect.hpp"
+    :pointmax 37304
+    :fsize 37303
+    :lastmodtime '(20609 55887)
+    :unmatched-syntax '((semantic-list 10237 . 10241) (semantic-list 10172 . 10178) (semantic-list 9937 . 9945) (symbol 9932 . 9937) (semantic-list 8995 . 9001) (symbol 8990 . 8995) (semantic-list 8692 . 8714) (symbol 8687 . 8692) (semantic-list 5822 . 5825) (semantic-list 5671 . 5676) (symbol 5666 . 5671) (semantic-list 5365 . 5371) (symbol 5360 . 5365) (semantic-list 5297 . 5310) (semantic-list 5256 . 5269) (semantic-list 5204 . 5207) (semantic-list 5179 . 5182) (semantic-list 5123 . 5128) (semantic-list 4944 . 4952) (symbol 4939 . 4944) (semantic-list 4192 . 4198) (symbol 4187 . 4192) (semantic-list 4061 . 4087) (symbol 4056 . 4061))
+    :lexical-table 
+        '(("CV_HAAR_FEATURE_MAX" . ((number "3" 3003 . 3004)))
+          ("__OPENCV_OBJDETECT_HPP__")
+          ("CV_HAAR_MAGIC_VAL" . ((number "0x42500000" 2635 . 2645)))
+          ("CV_TYPE_NAME_HAAR" . ((string "\"opencv-haar-classifier\"" 2675 . 2699)))
+          ("CV_HAAR_DO_CANNY_PRUNING" . ((number "1" 4305 . 4306)))
+          ("CV_HAAR_DO_ROUGH_SEARCH" . ((number "8" 4419 . 4420)))
+          ("CV_HAAR_FIND_BIGGEST_OBJECT" . ((number "4" 4381 . 4382)))
+          ("CV_IS_HAAR_CLASSIFIER" (spp-arg-list ("haar") 2730 . 2738) . ((semantic-list "((haar) != NULL &&                                                                   \\
+    (((const CvHaarClassifierCascade*)(haar))->flags & CV_MAGIC_MASK)==CV_HAAR_MAGIC_VAL)" 2796 . 2972)))
+          ("CV_HAAR_SCALE_IMAGE" . ((number "2" 4343 . 4344)))
+          )
+
+    )
+   )
+  :file "!usr!local!Cellar!opencv!2.4.3!include!opencv2!objdetect!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

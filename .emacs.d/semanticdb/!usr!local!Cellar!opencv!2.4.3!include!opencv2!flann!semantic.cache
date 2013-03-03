@@ -1,0 +1,23 @@
+;; Object flann/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "flann/"
+  :tables (list 
+   (semanticdb-table "miniflann.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_OPENCV_MINIFLANN_HPP_" variable (:constant-flag t) nil [2197 2219]))          
+    :file "miniflann.hpp"
+    :pointmax 6022
+    :fsize 6021
+    :lastmodtime '(20607 14186)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_OPENCV_MINIFLANN_HPP_")
+          )
+
+    )
+   )
+  :file "!usr!local!Cellar!opencv!2.4.3!include!opencv2!flann!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

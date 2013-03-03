@@ -1,0 +1,24 @@
+;; Object nonfree/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nonfree/"
+  :tables (list 
+   (semanticdb-table "features2d.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__OPENCV_NONFREE_FEATURES_2D_HPP__" variable (:constant-flag t) nil [2209 2243])
+            ("opencv2/features2d/features2d.hpp" include nil nil [2245 2289]))          
+    :file "features2d.hpp"
+    :pointmax 5816
+    :fsize 5815
+    :lastmodtime '(20607 14186)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__OPENCV_NONFREE_FEATURES_2D_HPP__")
+          )
+
+    )
+   )
+  :file "!usr!local!Cellar!opencv!2.4.3!include!opencv2!nonfree!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

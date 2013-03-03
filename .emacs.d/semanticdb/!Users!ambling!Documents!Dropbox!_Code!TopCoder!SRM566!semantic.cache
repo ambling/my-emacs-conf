@@ -1,0 +1,73 @@
+;; Object SRM566/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SRM566/"
+  :tables (list 
+   (semanticdb-table "250.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("string" include (:system-flag t) nil [39 56])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [57 77])
+            ("PenguinTiles" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [99 106])
+                    ("minMoves" function
+                       (:arguments 
+                          ( ("tiles" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [121 143]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [108 529]))                  
+                :type "class")
+                nil [79 533]))          
+    :file "250.cpp"
+    :pointmax 534
+    :fsize 533
+    :lastmodtime '(20721 39989)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "500.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("vector" include (:system-flag t) nil [39 56])
+            ("map" include (:system-flag t) nil [57 71])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [72 92])
+            ("PenguinPals" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [113 120])
+                    ("numMap" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [122 146])
+                    ("findMaximumMatching" function
+                       (:arguments 
+                          ( ("colors" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [173 187]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [149 886]))                  
+                :type "class")
+                nil [94 889])
+            ("main" function (:type "int") nil [891 967]))          
+    :file "500.cpp"
+    :pointmax 739
+    :fsize 967
+    :lastmodtime '(20721 43649)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!ambling!Documents!Dropbox!_Code!TopCoder!SRM566!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

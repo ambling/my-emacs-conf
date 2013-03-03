@@ -1,0 +1,52 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "imgTrans.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("cv.hpp" include (:system-flag t) nil [39 56])
+            ("highgui.h" include (:system-flag t) nil [57 77])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [79 99])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [100 119])
+            ("getLabImg" function
+               (:arguments 
+                  ( ("image" variable
+                       (:constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135 151]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [121 817])
+            ("getRGBImg" function
+               (:arguments 
+                  ( ("lab" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [833 841]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [819 1529])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1540 1549])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1550 1562]))                  
+                :type "int")
+                nil [1531 2828]))          
+    :file "imgTrans.cpp"
+    :pointmax 2829
+    :fsize 2828
+    :lastmodtime '(20697 46426)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!ambling!Documents!Dropbox!__Doc!ComputerVision!Homework!project2!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

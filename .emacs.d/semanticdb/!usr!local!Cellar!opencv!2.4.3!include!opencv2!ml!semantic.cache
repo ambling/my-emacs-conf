@@ -1,0 +1,25 @@
+;; Object ml/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ml/"
+  :tables (list 
+   (semanticdb-table "ml.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__OPENCV_ML_HPP__" variable (:constant-flag t) nil [2064 2081])
+            ("opencv2/core/core.hpp" include nil nil [2083 2115])
+            ("limits.h" include (:system-flag t) nil [2116 2135]))          
+    :file "ml.hpp"
+    :pointmax 78115
+    :fsize 78114
+    :lastmodtime '(20609 55887)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__OPENCV_ML_HPP__")
+          )
+
+    )
+   )
+  :file "!usr!local!Cellar!opencv!2.4.3!include!opencv2!ml!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
