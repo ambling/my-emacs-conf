@@ -5,14 +5,20 @@
 (global-unset-key "\M- ")
 (global-set-key "\M- " 'set-mark-command)
 
-(global-set-key "\C-x\C-g" 'end-of-buffer)
-(global-set-key "\C-xg" 'beginning-of-buffer)
-(global-set-key "\C-u" 'undo)
+;; (global-set-key "\C-x\C-g" 'end-of-buffer)
+;; (global-set-key "\C-xg" 'beginning-of-buffer)
+;; (global-set-key "\C-u" 'undo)
 
 (global-set-key "\M-\t" 'dabbrev-expand)
 
+;(linum-mode 1)
 (global-linum-mode 1)
 (setq linum-format "%d ")
+
+;; disable backup
+(setq backup-inhibited t)
+;; disable autosave
+(setq auto-save-default nil)
 
 (transient-mark-mode)
 (global-set-key [(meta g)] 'goto-line)
@@ -30,8 +36,8 @@
 (color-theme-comidia)
 
 
-(setq default-tab-width 4)
-(setq c-basic-offset 4 indent-tabs-mode nil)
+;; (setq default-tab-width 4)
+;; (setq c-basic-offset 4 indent-tabs-mode nil)
 
 (display-time-mode 1) 
 ;;时间使用24小时制 
@@ -77,8 +83,8 @@ scroll-conservatively 10000)
 ;(require 'smart-tab)
 ;(global-smart-tab-mode 1)
 
-(setq c-default-style "linux"
-	  c-basic-offset 4)
+;; (setq c-default-style "linux"
+;; 	  c-basic-offset 4)
 
 ;;;;  Helper tools.
 ;(setq semantic-default-submodes '(global-semantic-idle-scheduler-mode
@@ -88,29 +94,29 @@ scroll-conservatively 10000)
 ;(semantic-mode 1)
 
 
-(defun my-c-mode-common-hook()
-  ;(global-ede-mode t)
-  (c-toggle-hungry-state)
-  ;;按键定义
-  (define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
-  ;(define-key c-mode-base-map [(control \`)] 'hs-toggle-hiding)
-  (define-key c-mode-base-map [(meta ?/)] 'comment-or-uncomment-region)
-  ;(define-key c-mode-base-map [(f7)] 'compile)
-  ;(define-key c-mode-base-map [(meta \`)] 'c-indent-command)
-  ;(define-key c-mode-base-map [(tab)] 'hippie-expand)
-  (define-key c-mode-base-map [(tab)] 'smart-tab)
-  ;(define-key c-mode-base-map [(meta ?/)] 'semantic-ia-complete-tip)
+;; (defun my-c-mode-common-hook()
+;;   ;(global-ede-mode t)
+;;   (c-toggle-hungry-state)
+;;   ;;按键定义
+;;   (define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
+;;   ;(define-key c-mode-base-map [(control \`)] 'hs-toggle-hiding)
+;;   (define-key c-mode-base-map [(meta ?/)] 'comment-or-uncomment-region)
+;;   ;(define-key c-mode-base-map [(f7)] 'compile)
+;;   ;(define-key c-mode-base-map [(meta \`)] 'c-indent-command)
+;;   ;(define-key c-mode-base-map [(tab)] 'hippie-expand)
+;;   (define-key c-mode-base-map [(tab)] 'smart-tab)
+;;   ;(define-key c-mode-base-map [(meta ?/)] 'semantic-ia-complete-tip)
   
-  ;;预处理设置
-  (setq c-macro-shrink-window-flag t)
-  (setq c-macro-preprocessor "cpp")
-  (setq c-macro-cppflags " ")
-  (setq c-macro-prompt-flag t)
-  (setq hs-minor-mode t)
-  (setq abbrev-mode t)
-  (global-font-lock-mode)
-)
-(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+;;   ;;预处理设置
+;;   (setq c-macro-shrink-window-flag t)
+;;   (setq c-macro-preprocessor "cpp")
+;;   (setq c-macro-cppflags " ")
+;;   (setq c-macro-prompt-flag t)
+;;   (setq hs-minor-mode t)
+;;   (setq abbrev-mode t)
+;;   (global-font-lock-mode)
+;; )
+;; (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
 
 ;(autoload 'senator-try-expand-semantic "senator")
 
@@ -129,3 +135,16 @@ scroll-conservatively 10000)
 ;        try-expand-whole-kill
 ;        )
 ;)
+
+
+(require 'google-c-style)
+;; Provides the google C/C++ coding style. You may wish to add
+;; `google-set-c-style' to your `c-mode-common-hook' after requiring this
+;; file. For example:
+;;
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+;;
+;; If you want the RETURN key to go to the next line and space over
+;; to the right place, add this to your .emacs right after the load-file:
+;;
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)
