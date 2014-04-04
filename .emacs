@@ -4,6 +4,7 @@
 
 (global-unset-key "\M- ")
 (global-set-key "\M- " 'set-mark-command)
+(global-set-key "\C-cc" 'comment-or-uncomment-region)
 
 (global-set-key "\M-\t" 'dabbrev-expand)
 
@@ -22,7 +23,11 @@
 
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-comidia)
+;; (color-theme-comidia)
+(color-theme-calm-forest )
+(transient-mark-mode t)
+;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+;;(load-theme 'granger t)
 
 (display-time-mode 1) 
 ;;时间使用24小时制 
@@ -69,3 +74,5 @@ scroll-conservatively 10000)
 ;; to the right place, add this to your .emacs right after the load-file:
 ;;
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
+
+(require 'thrift-mode)
