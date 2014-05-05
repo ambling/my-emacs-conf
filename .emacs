@@ -25,7 +25,11 @@
 
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-comidia)
+;; (color-theme-comidia)
+(color-theme-calm-forest )
+(transient-mark-mode t)
+;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+;;(load-theme 'granger t)
 
 (display-time-mode 1) 
 ;;时间使用24小时制 
@@ -79,3 +83,7 @@ scroll-conservatively 10000)
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+;; thrift mode for apache thrift
+(require 'thrift-mode)
+
