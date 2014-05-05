@@ -4,7 +4,7 @@
 
 (global-unset-key "\M- ")
 (global-set-key "\M- " 'set-mark-command)
-
+(global-set-key "\C-cc" 'comment-or-uncomment-region)
 (global-set-key "\M-\t" 'dabbrev-expand)
 
 (global-linum-mode 1)
@@ -19,6 +19,9 @@
 (global-set-key [(meta g)] 'goto-line)
 
 (add-to-list 'load-path "~/.emacs.d")
+
+;; el-get init
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 (require 'color-theme)
 (color-theme-initialize)
@@ -69,3 +72,10 @@ scroll-conservatively 10000)
 ;; to the right place, add this to your .emacs right after the load-file:
 ;;
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
+
+;; markdown mode
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
