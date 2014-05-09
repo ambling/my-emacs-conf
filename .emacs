@@ -7,6 +7,10 @@
 (global-set-key "\C-cc" 'comment-or-uncomment-region)
 (global-set-key "\M-\t" 'dabbrev-expand)
 
+;; buffer traversal
+(global-set-key "\C-xn" 'next-buffer)
+(global-set-key "\C-x\d" 'previous-buffer)
+
 (global-linum-mode 1)
 (setq linum-format "%d ")
 
