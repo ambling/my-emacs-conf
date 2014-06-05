@@ -62,12 +62,12 @@ Suitable for inclusion in `c-offsets-alist'."
      ;; the token after the initial colon.
      ((looking-at ":\\s *")
       (goto-char (match-end 0))))
-    (vector (+ 4 (current-column)))))
+    (vector (+ 2 (current-column)))))
 
 (defconst google-c-style
   `((c-recognize-knr-p . nil)
     (c-enable-xemacs-performance-kludge-p . t) ; speed up indentation in XEmacs
-    (c-basic-offset . 4)
+    (c-basic-offset . 2)
     (indent-tabs-mode . nil)
     (c-comment-only-line-offset . 0)
     (c-hanging-braces-alist . ((defun-open after)
@@ -96,7 +96,7 @@ Suitable for inclusion in `c-offsets-alist'."
         c-semi&comma-no-newlines-before-nonblanks))
     (c-indent-comments-syntactically-p . t)
     (comment-column . 40)
-    (c-indent-comment-alist . ((other . (space . 4))))
+    (c-indent-comment-alist . ((other . (space . 2))))
     (c-cleanup-list . (brace-else-brace
                        brace-elseif-brace
                        brace-catch-brace

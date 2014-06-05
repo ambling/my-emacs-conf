@@ -1,6 +1,8 @@
 ;;MIT Licensed
 ;;By ambling<ambling07@gmail.com>
 
+(setq transient-mark-mode t)
+(setq vc-follow-symlinks nil)
 
 (global-unset-key "\M- ")
 (global-set-key "\M- " 'set-mark-command)
@@ -75,11 +77,13 @@ scroll-conservatively 10000)
 ;; file. For example:
 ;;
 (add-hook 'c-mode-common-hook 'google-set-c-style)
+(add-hook 'c++-mode-common-hook 'google-set-c-style)
 ;;
 ;; If you want the RETURN key to go to the next line and space over
 ;; to the right place, add this to your .emacs right after the load-file:
 ;;
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
+(add-hook 'c++-mode-common-hook 'google-make-newline-indent)
 
 ;; markdown mode
 (autoload 'markdown-mode "markdown-mode"
